@@ -260,8 +260,8 @@ svg{display:block;}
 "use strict";
 
 /* ===== SINCRONIZACIÓN — pega aquí los 2 datos de tu proyecto Supabase ===== */
-const SUPABASE_URL = "PEGA_TU_URL_AQUI";
-const SUPABASE_ANON_KEY = "PEGA_TU_LLAVE_ANON_AQUI";
+const SUPABASE_URL = "https://zudkpqzrgqkjymmzeryv.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp1ZGtwcXpyZ3FranltbXplcnl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMxMDkwNDUsImV4cCI6MjA5ODY4NTA0NX0.S0wPUzblMvLnP4m2kBeUSh26TROkf89ZzGfYwAd0ZT0";
 const SYNC_ON = /^https:\/\/.+\.supabase\.co/.test(SUPABASE_URL) && SUPABASE_ANON_KEY.length > 30;
 let sb=null, session=null, applyingRemote=false, pushTimer=null, syncMsg="";
 
